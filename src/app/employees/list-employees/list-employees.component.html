@@ -1,6 +1,7 @@
 <p>
   list-employees works!{{msg}}
 </p>
+<p>Hi</p>
 <div class="panel panel-primary" *ngFor="let employee of employees" (click)=getEmployeeById(employee.empId)>
   <app-details-employee [employee]="employee"></app-details-employee>
 </div>
