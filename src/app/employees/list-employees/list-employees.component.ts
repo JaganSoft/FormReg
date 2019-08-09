@@ -25,6 +25,7 @@ export class ListEmployeesComponent implements OnInit {
 
   }
 getEmployeeById(empid:number):any{
+  let a=0;
   this.employees=[];
   this.employees.push(this.empService.getEmployeeById(empid));
 return this.employees;
